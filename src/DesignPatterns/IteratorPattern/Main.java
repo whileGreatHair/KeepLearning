@@ -7,7 +7,7 @@ public class Main {
         bookShelf.appendBook(new Book(" Bible "));
         bookShelf.appendBook(new Book(" Cinderella "));
         bookShelf.appendBook(new Book(" Daddy - Long - Legs "));
-        bookShelf.appendBook(new Book(" Egg "));
+//        bookShelf.appendBook(new Book(" Egg "));
 
         Iterator it = bookShelf.iterator();
         while (it.hasNext()) {
