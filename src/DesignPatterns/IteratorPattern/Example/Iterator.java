@@ -1,4 +1,4 @@
-package DesignPatterns.IteratorPattern;
+package DesignPatterns.IteratorPattern.Example;
 
 public interface Iterator {
     /**

@@ -1,4 +1,4 @@
-package DesignPatterns.IteratorPattern;
+package DesignPatterns.IteratorPattern.Example;
 
 /**
  * 所要遍历的集合接口。

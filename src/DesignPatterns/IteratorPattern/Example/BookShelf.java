@@ -1,6 +1,4 @@
-package DesignPatterns.IteratorPattern;
-
-import java.util.ArrayList;
+package DesignPatterns.IteratorPattern.Example;
 
 /**
  * 表示书架类。

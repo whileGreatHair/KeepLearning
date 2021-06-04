@@ -1,12 +1,5 @@
 package DesignPatterns.IteratorPattern.practice1;
 
-import DesignPatterns.IteratorPattern.Aggregate;
-import DesignPatterns.IteratorPattern.Book;
-import DesignPatterns.IteratorPattern.BookShelfIterator;
-import DesignPatterns.IteratorPattern.Iterator;
-
-import java.util.ArrayList;
-
 /**
  * 表示书架类。
  * 该类是作为集合存储'书'对象的，因此实现了Aggregate接口
