@@ -1,7 +1,7 @@
-package DesignPatterns.PrototypePattern.Example.framework;
+package DesignPatterns.PrototypePattern.Example;
 
-import DesignPatterns.PrototypePattern.Example.MessageBox;
-import DesignPatterns.PrototypePattern.Example.UnderlinePen;
+import DesignPatterns.PrototypePattern.Example.framework.Manager;
+import DesignPatterns.PrototypePattern.Example.framework.Product;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,9 +16,13 @@ public class Main {
         //生成
         Product p1 = manager.create("strong message");
         p1.use("Hello,world");
-        Product p2 = manager.create("waning box");
+        Product p2 = manager.create("warning box");
         p2.use("Hello,world");
         Product p3 = manager.create("slash box");
         p3.use("Hello,world");
+
+        Product p4 = manager.create("warning box");
+        p4.use("你好，时间");
+
     }
 }
