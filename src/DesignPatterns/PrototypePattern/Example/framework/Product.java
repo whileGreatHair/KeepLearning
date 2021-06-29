@@ -1,7 +1,7 @@
 package DesignPatterns.PrototypePattern.Example.framework;
 
-public interface Product extends Cloneable {
-    void use(String s);
+public interface Product extends Cloneable{
+    public abstract void use(String s);
 
-    Product createClone();
+    public abstract Product createClone();
 }
