@@ -1,0 +1,28 @@
+# ignore Maven generated target folders
+/target/
+/temp/
+/out/
+
+# java class file
+*.class
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.iml
+
+# Package Files #
+*.war
+*.ear
+/target
+/.settings
+/.classpath
+/.project
+/.idea
+
+
+# ignore log files
+*.log
+
