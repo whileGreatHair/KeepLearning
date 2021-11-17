@@ -31,6 +31,5 @@ public class Main {
     public static void usage() {
         System.out.println("Usage: java Main plain 编写纯文本文档");
         System.out.println("Usage: java Main html 编写HTML文档");
-
     }
 }
