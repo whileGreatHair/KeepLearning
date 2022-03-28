@@ -5,6 +5,15 @@ import org.junit.Test;
 
 public class StateTest {
 
+    /*******************NEW****************/
+    @Test
+    public void testStateNew() {
+        Thread thread = new Thread(() -> {
+        });
+        System.out.println(thread.getState());
+    }
+
+
     /*******************BLOCKED与RUNNABLE状态的转换****************/
     @Test
     public void blocked() throws InterruptedException {
@@ -18,7 +27,7 @@ public class StateTest {
         }, "b");
 
         a.start();
-        Thread.sleep(1000L);
+        //Thread.sleep(1000L);
         b.start();
         System.out.println(a.getName() + ":" + a.getState()); // 输出？
         System.out.println(b.getName() + ":" + b.getState()); // 输出？
@@ -27,7 +36,7 @@ public class StateTest {
     // 同步方法争夺锁
     private synchronized void testMethod() {
         try {
-            Thread.sleep(500L);
+            Thread.sleep(2L);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

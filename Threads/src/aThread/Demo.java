@@ -2,6 +2,10 @@ package aThread;
 
 import org.junit.Test;
 
+import java.time.LocalDateTime;
+
+import static java.lang.Thread.sleep;
+
 /**
  * @author yiqr
  * @create 2021-05-07 14:14
@@ -16,15 +20,17 @@ public class Demo {
     public static class MyThread1 extends Thread {
         @Override
         public void run() {
-            System.out.println("MyThread: extends Thread");
+            System.out.println("MyThread: extends Thread"+LocalDateTime.now());
         }
     }
 
     @Test
-    public void demo1() {
+    public void demo1() throws InterruptedException {
         MyThread1 myThread = new MyThread1();
         //调用start方法该线程才算启动！
         myThread.start();
+        sleep(1);
+        System.out.println("主线程"+ LocalDateTime.now());
     }
 
     /******************************方式二*****************************/

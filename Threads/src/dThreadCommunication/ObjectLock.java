@@ -2,7 +2,7 @@ package dThreadCommunication;
 
 public class ObjectLock {
 
-    private static Object lock = new Object();
+    private static final Object lock = new Object();
 
     static class ThreadA implements Runnable {
         @Override
